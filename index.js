@@ -1,16 +1,12 @@
 
 'use strict'
 var EventEmitter= require('events');
-//var EventConfig= require('./config');//.events;
 var EventConfig= require('./config');
 
 var http= require('http'),
 express=require('express');
 var hotel= require('./hotel_module');
-
 var MyHotel=new hotel("Inbar-Palas", "the best");
-
-//RETURN AS A RESPONSE TO HTTP SERVER
 var history= MyHotel.display();
 
 console.log("-------------");

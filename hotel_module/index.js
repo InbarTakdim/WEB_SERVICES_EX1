@@ -1,23 +1,3 @@
-/*
-var http= require('http'),
-express=require('express');
-var app=express();
-app.get('/' , function(req,res){
-    res.writeHead(200);
-    var hotel= require('./Hotel')
-    var hot1= new Hotel();
-    hot1.inc_grade();
-    hot1.dec_grade();
-    hot1.dec_grade();
-    hot1.inc_grade();
-    hot1.inc_grade();
-    hot1.inc_grade();
-    res.write(hot1.response);
-    res.write("sucess");}
-});
-http.createServer(app).listen(8080);
-*/
-//----------------------
 'use strict'
 var EventEmitter= require('events');
 var EventConfig= require('../config');
@@ -30,12 +10,13 @@ module.exports= class hotel extends EventEmitter{
         this.hotel_name=hotel_n;
         this.branch=hotel_b;
         this.grade=0;
-        this.res= "name: "+this.hotel_name+ " branch: "+this.branch+"\n";
+        this.ar= new Array("hotel: "+ this.hotel_name,"branch: "+ this.branch );
+        
     }
 
     inc_grade(){
         this.grade++;
-        this.res+="after inc>>"+ this.grade +"\n";
+        this.ar.push("after inc>>"+ this.grade);
         this.emit(EventConfig.FIRE,  this.grade);
     }
 
@@ -43,12 +24,12 @@ module.exports= class hotel extends EventEmitter{
         if(this.grade>=1)
        { 
             this.grade--;
-            this.res+="after dec>>"+ this.grade+ "\n";
+            this.ar.push("after dec>>"+ this.grade);
             this.emit(EventConfig.FIRE,  this.grade);
        }
 
        else{
-             this.res+="dec failed! grade is zero>>"+ this.grade+ "\n";
+            this.ar.push("dec failed! grade is zero>>"+ this.grade);
              this.emit(EventConfig.FIRE, "dec failed>> "+ this.grade);
        }
 
@@ -56,7 +37,7 @@ module.exports= class hotel extends EventEmitter{
     }
 
     display(){
-        return this.res;
+        return this.ar;
     }
 
 

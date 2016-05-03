@@ -1,0 +1,31 @@
+[{
+    "name": "shai shababo",
+    "grade": 60,
+    "id":11,
+    "year": "a"
+}, {
+    "name": "inbar takdim",
+    "grade": 98,
+    "id":22,
+    "year": "a"
+}, {
+    "name": "sahar bezaleli",
+    "grade": 100,
+    "id":33,
+    "year": "b"
+}, {
+    "name": "yaniv mizrachi",
+    "grade": 90,
+    "id":44,
+    "year": "a"
+},{
+    "name": "shirel tanti",
+    "grade":55,
+    "id":55,
+    "year": "b"
+},{
+    "name": "marina kavishar",
+    "grade": 82,
+    "id":66,
+    "year": "b"
+}]

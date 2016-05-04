@@ -1,10 +1,9 @@
-'use strict'
+'use strict';
 
 var http= require('http');
 var express=require('express');
 var college= require('./college_module');
 var MyCollege=new college();
-var
 var app=express();
 app.get('/getStudById/:studentId' , function(req,res){
     //get student by Id

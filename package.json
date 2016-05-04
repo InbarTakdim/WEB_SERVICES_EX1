@@ -1,9 +1,10 @@
 {
-  "name": "w_s_ex0",
+  "name": "ex_1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Inbar Takdim",
   "license": "ISC",
@@ -13,11 +14,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InbarTakdim/w_s_ex0.git"
+    "url": "git+https://github.com/InbarTakdim/WEB_SERVICES_EX1.git",
+    "start" : "node server.js"
   },
   "bugs": {
-    "url": "https://github.com/InbarTakdim/w_s_ex0/issues"
+    "url": "https://github.com/InbarTakdim/WEB_SERVICES_EX1/issues"
   },
-  "homepage": "https://github.com/InbarTakdim/w_s_ex0#readme",
+  "homepage": "https://github.com/InbarTakdim/WEB_SERVICES_EX1#readme",
   "description": ""
 }

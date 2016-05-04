@@ -4,7 +4,7 @@ var http= require('http');
 var express=require('express');
 var college= require('./college_module');
 var MyCollege=new college();
-
+var
 var app=express();
 app.get('/getStudById/:studentId' , function(req,res){
     //get student by Id
@@ -28,4 +28,4 @@ app.get('/' , function(req,res){
     var text ="hey";
         res.send(text);
 });
-http.createServer(app).listen(8080);
+http.createServer(app).listen(process.env.PORT ||8080);

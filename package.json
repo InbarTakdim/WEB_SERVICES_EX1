@@ -14,8 +14,8 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InbarTakdim/WEB_SERVICES_EX1.git",
-    "start" : "node server.js"
+    "url": "git+https://github.com/InbarTakdim/WEB_SERVICES_EX1.git"
+
   },
   "bugs": {
     "url": "https://github.com/InbarTakdim/WEB_SERVICES_EX1/issues"

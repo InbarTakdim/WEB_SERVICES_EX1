@@ -1,19 +1,23 @@
 Server listening to port 8080.
-1.  Get the excellent students for a particular year:
+
+***  Get the excellent students for a particular year:
 
 excellentstudentbyyear/year
 
+
 return an array of JSON of all choosen-year students received as parameter and their score is 90 or above.
 
-2.  Get all excellent students:
+***  Get all excellent students:
 
 /beststudents
 
+
 return an array of JSON of all students their score is 90 or above.
 
-3.  Get student by id
+***  Get student by id
 
 /getStudById/studentId
+
 
 Return a JSON with the data of that student.
 (or an error like "invalid ID").

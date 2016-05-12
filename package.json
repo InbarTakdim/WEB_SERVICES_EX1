@@ -9,17 +9,17 @@
   "author": "Inbar Takdim",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/InbarTakdim/WEB_SERVICES_EX1.git"
-
   },
   "bugs": {
     "url": "https://github.com/InbarTakdim/WEB_SERVICES_EX1/issues"
   },
   "homepage": "https://github.com/InbarTakdim/WEB_SERVICES_EX1#readme",
-  "description": ""
+  "description": "Server listening to port 8080."
 }

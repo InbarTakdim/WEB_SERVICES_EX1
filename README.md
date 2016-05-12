@@ -2,14 +2,14 @@ Server listening to port 8080.
 
 ***  Get the excellent students for a particular year:
 
-excellentstudentbyyear/year
+excellentStudentByYear/year
 
 
 return an array of JSON of all choosen-year students received as parameter and their score is 90 or above.
 
 ***  Get all excellent students:
 
-/beststudents
+/bestsStudents
 
 
 return an array of JSON of all students their score is 90 or above.

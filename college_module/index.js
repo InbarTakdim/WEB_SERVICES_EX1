@@ -21,7 +21,7 @@ module.exports= class college {
             res.send("<html><h1>no such id</h1></html>");
           }
         else{ res.send(user); }
-        mongoose.disconnect();
+        //mongoose.disconnect();
         });
     }
 
@@ -34,7 +34,7 @@ module.exports= class college {
                 res.send("<html><h1>evryone under 90 in this year/h1></html>");
              }
             else{ res.send(user); }
-            mongoose.disconnect();
+            //mongoose.disconnect();
         });
     }
 
@@ -48,8 +48,9 @@ module.exports= class college {
                res.send("<html><h1>evryone under 90</h1></html>");
              }
             else{ res.send(user); }
-            mongoose.disconnect();
+            //mongoose.disconnect();
             });
     }
 
+destructor(){mongoose.disconnect();}
 }

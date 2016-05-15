@@ -31,7 +31,7 @@ module.exports= class college {
         student.find({}).where('year').equals(year).where('grade').gt(89).exec(function(err, user){
             if(err) throw err;
             if(user.length==0){
-                res.send("<html><h1>evryone under 90 in this year/h1></html>");
+                res.send("<html><h1>evryone under 90 in this year</h1></html>");
              }
             else{ res.send(user); }
             //mongoose.disconnect();

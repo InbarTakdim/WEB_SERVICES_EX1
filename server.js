@@ -5,7 +5,7 @@ var express=require('express');
 var college= require('./college_module');
 var MyCollege=new college();
 var app=express();
-
+var port=process.env.PORT ||8080;
 app.set('port' , port);
 app.use('/' , express.static('./public'));
 app.use(function(req, res, next){
